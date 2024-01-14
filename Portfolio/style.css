@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #312933;
+    color: azure;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(photos/r2.jpg); */
+    background-size: cover;
+    background-position   : center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 50px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: rgb(252, 215, 255);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #b37de2;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 10%;
+    font-size: 40px;
+    padding: 5%;
+    color: rgb(252, 215, 255);
+    text-align: center;
+}
+.header-text p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+.header-text h1{
+    margin-top: 20px;
+    font-size: 60px;
+    color: rgb(252, 215, 255);
+}
+.header-text h1 span{
+    color: #df6ee7;
+}
+
+#about{
+    padding: 80px 0;
+    color: rgb(252, 215, 255);
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* margin-bottom: 10px; */
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(251, 230, 255);
+}
+
+#skills{
+    padding: 30px 0;
+}
+.skills-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap:40px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+.skills-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.skills-list div i{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #cd9cf9;
+}
+.skills-list div h2{
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: rgb(248, 186, 253);
+}
+.skills-list div p{
+    color: rgb(252, 215, 255);
+}
+.skills-list div a{
+    /* text-decoration: none; */
+    color: #7f92ef;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.skills-list div:hover{
+    /* background: #0f9999; */
+    background: linear-gradient(130deg, #9d62a3, #b37de2);
+    transform : translateY(-10px);
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+    color: rgb(252, 215, 255);
+}
+.contact-left p i{
+    color: rgb(252, 215, 255);
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: rgb(252, 215, 255);
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #b37de2;
+    transform: translateY(-5px);
+}
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid rgb(252, 215, 255);
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: rgb(252, 215, 255);
+    transition: 0.5s;
+}
+.btn:hover{
+    background: #b37de2;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: rgb(90, 72, 91);
+    padding: 15px;
+    margin: 15px 0;
+    color: rgb(252, 215, 255);
+    font-size: 18px;
+    border-radius: 6px;
+}
+form .btn{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: #080808;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: rgb(90, 72, 91);
+    font-weight: 300;
+    margin-top: 20px;
+    color: rgb(252, 215, 255);
+}
+.copyright i{
+    color: #fc0082;
+}
